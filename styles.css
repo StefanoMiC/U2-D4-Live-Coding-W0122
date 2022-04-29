@@ -60,7 +60,7 @@ button {
   cursor: pointer;
   font-size: 20px;
   font-weight: 700;
-
+  line-height: 1.8;
   display: flex;
   align-items: center;
 }
@@ -76,18 +76,27 @@ section {
   border-color: var(--clr-yellow);
 }
 
+.btn-yellow:hover {
+  background-color: white;
+}
+
 .btn-blue {
   color: white;
   background-color: var(--clr-dk-blue);
   border-color: var(--clr-dk-blue);
 }
 
-.btn-yellow:hover {
+.btn-blue:hover {
+  color: var(--clr-dk-blue);
   background-color: white;
 }
 
 button .arrow-icon {
   margin-left: 15px;
+}
+
+button:hover .arrow-icon {
+  margin-left: 20px;
 }
 
 .inline-block {
@@ -355,10 +364,6 @@ button .arrow-icon {
   /* the direct child will be growing with flex-grow: 1 */
 }
 
-.hero button:hover .arrow-icon {
-  margin-left: 20px;
-}
-
 .card {
   border-radius: 30px;
   padding-top: 105px;
@@ -474,6 +479,7 @@ button .arrow-icon {
   text-align: left;
   position: relative;
 }
+
 .product-card .badge {
   padding: 5px 20px;
   color: white;
