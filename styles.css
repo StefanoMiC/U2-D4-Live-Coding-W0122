@@ -42,6 +42,16 @@ p {
   font-weight: 400;
 }
 
+a {
+  color: var(--clr-dk-blue);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--clr-green);
+}
+
 button {
   border: 1px solid transparent;
   background-color: transparent;
@@ -94,6 +104,42 @@ button .arrow-icon {
 
 .w-50 {
   width: 50%;
+}
+
+.w-33 {
+  width: 33.333%;
+}
+
+.p-1 {
+  padding: 0.25rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.p-3 {
+  padding: 1rem;
+}
+
+.p-4 {
+  padding: 1.5rem;
+}
+
+.p-5 {
+  padding: 2rem;
+}
+
+.p-6 {
+  padding: 3rem;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.mr-auto {
+  margin-right: auto;
 }
 
 .mb-1 {
@@ -172,6 +218,7 @@ button .arrow-icon {
 
 .col {
   flex: 1 0 auto;
+  padding: 0.5rem;
 }
 
 .gap-20 {
@@ -405,4 +452,92 @@ button .arrow-icon {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.products {
+  text-align: center;
+}
+
+.products .title-alt {
+  margin-bottom: 0;
+}
+
+.products h2 {
+  margin-bottom: 40px;
+}
+
+.product-card {
+  padding: 30px;
+  background-color: #f9f8f8;
+  border-radius: 30px;
+  overflow: hidden;
+  text-align: left;
+  position: relative;
+}
+.product-card .badge {
+  padding: 5px 20px;
+  color: white;
+  font-size: 15px;
+  line-height: 1.8;
+  font-weight: 600;
+  background-color: var(--clr-dk-blue);
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  border-radius: 10px;
+}
+
+.product-card > img {
+  width: 100%;
+}
+
+.product-card > div {
+  padding-top: 10px;
+}
+
+.product-card > div > div > * {
+  margin-bottom: 0;
+  padding-right: 10px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.product-card > div p {
+  color: var(--clr-dk-blue);
+}
+
+.product-card > div s {
+  color: #b8b8b8;
+}
+
+.product-card h4 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #d4d4d4;
+
+  font-family: var(--sans-serif);
+  font-size: 22px;
+  font-weight: 500;
+  color: #274c5b;
+}
+
+/* THIS CHANGES THE GRID OF CARDS FOR VIEWING ONLY A SINGLE CARD PER LINE ON SMALLER SCREENS  */
+@media (max-width: 768px) {
+  .products .container > .flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .products .w-33 {
+    width: 80%;
+  }
+
+  .product-card h4 {
+    text-align: center;
+  }
+
+  .product-card > .flex {
+    justify-content: center;
+  }
 }
